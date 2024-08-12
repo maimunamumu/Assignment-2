@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/miama');
+
 body{
     font-family: "Inter", sans-serif;
+}
+span{
+    font-family: 'Miama', sans-serif;
+    color: rgb(255, 255, 255);
+       font-size: 90px;
+       font-weight: 400;
+       background: none;
 }
 
 *{
@@ -23,7 +32,6 @@ body{
     width: 80%;
     margin: 5rem auto;
     color: aliceblue;
-    margin-top: 2rem;
 }
 .nav-bar{
     display: flex;
@@ -265,10 +273,11 @@ margin-top:2px ;
     width: 1440px;
     height: 571px;
     margin: 0 auto;
-    border: 2px solid red;
+    border: 2px solid black;
     background: black;
 }
 .run-extra{
+    /* border:2px solid sandybrown ; */
     width: 776px;
     height: 290px;
     display: flex;
@@ -284,6 +293,8 @@ margin-top:2px ;
       height: 400px;
 }
 .run-container{
+    /* margin: 50px ; */
+    /* border: 2px solid white; */
     width: 460px;
    height: 300px;
 }
@@ -319,15 +330,151 @@ line-height: 120%;
     height: 312px;
 }
 .img-container img{
+    border-radius: 1.1rem;
     width: 100%;
     height: 100%;
-    border-radius: 18px;
+    
 }
 #img-none{
     display: none;
 }
 
+/* four-section-styles */
+    .four-section{
+        margin:0 auto;
+    border: 2px solid black;
+    background-color: #060a0a;
+    max-width: 1440px;
+    height: 700px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .calculator{
+        /* border: 2px solid white; */
+        /* text-align: center; */
+        height: 120px;
+        width: 650px;
+    }
+    .calculator h1{
+        color: rgb(255, 255, 255);
+     font-family: Inter;
+      font-size: 48px;
+      font-weight: 900;
+    }
+    .calculator p{
+        color: rgba(255, 255, 255, 0.5);
+       font-family: Inter;
+         font-size: 14px;
+        font-weight: 400;
+    }
+    .BMI-calculator{
+        margin-top: 80px;
+        width: 1440px;
+           height: 487px;
+           background: rgb(34, 34, 34);
+    }
+    .bmi-container{
+        margin: 52px auto;
+        width: 1060px;
+        height: 386px;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bmi-table{
+        width: 577px;
+        height: 386px;
+    }
+    .Bmi-form{
+        width: 577px;
+        height: 386px;
+        margin: 10px auto;
+        /* border: 1px solid yellow; */
+    }
+    .bmi-table h1{
+        color: rgb(255, 255, 255);
+       font-family: Inter;
+        font-size: 28px;
+       font-weight: 900;
+
+    }
+    table{
+        border-collapse: collapse;
+        width: 310px;
+      height: 216px;
+      margin-top: 52px;
+       }
+        td{
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 5px;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: Inter;
+         font-size: 14px;
+         text-align: center;
+        
+        }
+        th{
+            border: 1px solid rgba(255, 255, 255, 0.1);
+           padding: 10px;
+           color: rgb(255, 255, 255);
+             font-family: Inter;
+             font-size: 16px;
+             font-weight: 500;
+        }
+        input{
+            width: 250px;
+             height: 48px;
+             border-radius: 8px;
+             background: rgba(255, 255, 255, 0.1);
+             border: none;
+             padding: 12px 40px 12px 20px;
+        }
+        .one-input{
+            margin-top: 30px;
+        }
+        .two-input{
+            margin-top: 10px;
+        }
+        .Bmi-form h1{
+            color: rgb(255, 255, 255);
+            font-family: Inter;
+            font-size: 28px;
+            font-weight: 900;
+        }
+        .Bmi-form p{
+            color: rgba(255, 255, 255, 0.5);
+             font-family: Inter;
+          font-size: 14px;
+            font-weight: 400;
+            margin-top: 14px;
+        }
+        select{
+            width: 250px;
+            height: 48px;
+            margin-top: 12px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+          font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        border: none;
+        padding: 12px 40px 12px 20px;
+        }
+        .select{
+            width: 510px;
+            margin-top: 12px;
+            
+        }
+
 @media screen and (max-width:576px){
+    body{
+        background-color: black;
+    }
     .nav-options{
         display: none;
        
@@ -464,6 +611,7 @@ height: 129px;
  #img-none{
     display: block;
     width: 287px;
+    border-radius: 18px;
  }
  .run-extra{
     /* border: none; */
@@ -494,4 +642,92 @@ height: 530px;
    height: 54px;
    font-size: 18px;
  }
+ /* four-section-responsive */
+ .four-section{
+    width: 100%;
+   height: 800px;
+ }
+ .bmi-container{
+    width: 353px;
+    height: 630px;
+     flex-direction: column;
+     align-items: center;
+    flex-direction: column;
+    
+ }
+ .calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 100px;
+    width: 353px;
+    height: 124px;
+ }
+ .calculator p{
+    font-size: 14px;
+
+ }
+ .calculator h1{
+    font-size: 32px;
+ }
+ .BMI-calculator{
+   width: 100%;
+   height:770px;
+   margin-top: 50px;
+ }
+ .bmi-table{
+    width: 353px;
+
+     flex-direction: column;
+     align-items: center;
+ }
+ .bmi-table h1{
+    font-size: 16px;
+ }
+ table{
+    margin-top: 20px;
+ }
+ td{
+    font-size: 14px;
+ }
+ th{
+     font-size: 14px;
+ }
+ .Bmi-form{
+   margin-top: 40px;
+     width: 353px;
+     height: 380px;
+     flex-direction: column;
+     align-items: center;
+ }
+ input{
+    width: 165px;
+     height: 48px;
 }
+select{
+    width: 165px;
+    height: 48px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+.select{
+    width: 330px;
+    margin-top: 12px;
+    
+}
+.calculate-btn{
+    font-size: 16px;
+    width: 210px;
+   height: 50px;
+
+
+}
+.Bmi-form h1{
+    font-size: 16px;
+}
+.Bmi-form p{
+    font-size: 14px;
+    margin-top: 14px;
+}
+}
+
