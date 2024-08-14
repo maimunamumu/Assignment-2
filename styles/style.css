@@ -5,7 +5,7 @@
 body{
     font-family: "Inter", sans-serif;
 }
-span{
+.span{
     font-family: 'Miama', sans-serif;
     color: rgb(255, 255, 255);
        font-size: 150px;
@@ -819,6 +819,9 @@ margin-top: 10px;
     }
 
 @media screen and (max-width:576px){
+    .span{
+        font-size: 70px;
+    }
     body{
         background-color: black;
     }
