@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.cdnfonts.com/css/miama');
-/* * {
-    border: 1px solid red;
-    }
-    
-    body{
-    border: 4px dashed green;
-    } */
+
 body{
     font-family: "Inter", sans-serif;
 }
@@ -353,7 +347,7 @@ line-height: 120%;
     border: 2px solid black;
     background-color: #060a0a;
     max-width: 1440px;
-    height: 600px;
+    height: 620px;
 }
 .challenge-container{
     height: 450px;
@@ -409,7 +403,7 @@ margin-top: 10px;
     border: 2px solid black;
     background-color: #060a0a;
     max-width: 1440px;
-    height: 790px;
+    min-height: 740px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -420,7 +414,7 @@ margin-top: 10px;
         /* text-align: center; */
         height: 120px;
         width: 650px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .calculator h1{
         color: rgb(255, 255, 255);
@@ -579,7 +573,7 @@ margin-top: 10px;
         border-radius: 17px;
         display: grid;
         grid-template-columns: repeat(3, 2fr);
-        padding-top: 40px;
+        padding-top: 20px;
         padding-left: 60px;
         /* padding-right: 5px; */
         padding-bottom: 5px;
@@ -605,7 +599,6 @@ margin-top: 10px;
     .team-image-1 p{
        color:#FFFFFF80;
        font-size: 17px;
-       background: none;
        margin-left: 30px;
        font-weight: 300;
        margin-top: 5px;
@@ -613,7 +606,6 @@ margin-top: 10px;
     .team-image-2{
         width: 350px;
         height: 270px;
-        
         background-image: url(../images/trainer2.png);
         background-size: cover;
         border-radius: 17px;
@@ -646,7 +638,6 @@ margin-top: 10px;
     .team-image-3 h1{
         color: #FFFFFF;
         font-size: 20px;
-        background: none;
         margin-top: 200px;
         margin-left: 10px;
     }
@@ -670,7 +661,6 @@ margin-top: 10px;
     .team-image-4 h1{
         color: #FFFFFF;
         font-size: 20px;
-        background: none;
         margin-top: 200px;
         margin-left: 10px;
     }
@@ -694,7 +684,6 @@ margin-top: 10px;
     .team-image-5 h1{
         color: #FFFFFF;
         font-size: 20px;
-        background: none;
         margin-top: 200px;
         margin-left: 10px;
     }
@@ -740,7 +729,7 @@ margin-top: 10px;
     .last-section{
         max-width: 1440px;
         margin: 0 auto;
-        min-height: 5s00px;
+        min-height: 300px;
         border: 2px solid black;
         background: rgb(34, 34, 34);
     }
@@ -753,33 +742,29 @@ margin-top: 10px;
         justify-content: center;
         align-items: center;
         margin-top: 50px;
-        /* background: none; */
     }
     .fitness-tittle{
-       
         width: 40%;
-        height: 280px;
-        background: none;
+        min-height: 200px;
         padding-left: 14px;
     }
     .fitness-tittle h1{
         background: none;
        color: #E6533C;
-       font-size: 44px;
+       font-size: 70px;
        font-weight: 800;
-       margin-top: 35px;
     
     }
     .fitness-tittle p{
         color:#FFFFFF80;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 16px;
         margin-top: 15px;
         width: 445px;
     }
     .fitness-get{
        width:30%;
-       height:280px;
+       min-height:200px;
       
        background: none;
        padding-left: 50px;
@@ -789,7 +774,6 @@ margin-top: 10px;
         font-weight: 700;
         font-size: 30px;
         background: none;
-        margin-top: 40px;
         margin-right: 20px;
     }
     .fitness-get p{
@@ -801,8 +785,7 @@ margin-top: 10px;
     }
     .fitness-start{
         width:30%;
-       height:280px;
-      
+       min-height:200px;
        background: none;
        padding-left: 50px;
     }
@@ -811,7 +794,6 @@ margin-top: 10px;
         font-weight: 700;
         font-size: 30px;
         background: none;
-        margin-top: 40px;
     }
     .fitness-start p{
         color: #FFFFFF80;
@@ -821,16 +803,20 @@ margin-top: 10px;
         margin-top: 15px;
     }
     hr{
-        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
         border: 2px solid rgba(255, 255, 255, 0.1);
     }
     #end{
-       max-width: 20%;
+       max-width: 100%;
        color: #FFFFFF80;
        margin-top: 23px;
        background: none;
-       font-size: 15px;
+       font-size: 20px;
        font-weight: 400;
+       text-align: center;
+       margin-bottom: 2%;
     }
 
 @media screen and (max-width:576px){
@@ -1070,7 +1056,7 @@ text-align: center;
  /* four-section-responsive */
  .four-section{
     width: 100%;
-   height: 800px;
+   /* height: 800px; */
  }
  .bmi-container{
     margin: 2rem auto;
@@ -1169,13 +1155,10 @@ select{
 /* five-section-responsive */
 .our-team{
     max-width:100%;
-    /* height: 1500px;
-    */
-    /* margin-top: 20px; */
   }
   .team-tittle{
     max-width: 90%;
-    margin-top: 10rem;
+    margin-top: 3rem;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -1189,7 +1172,7 @@ select{
     text-align: center;
     width: 80%;
     height: 48px;
-    margin-top: 14px;
+    margin-top: 10px;
   }
  
   .team-image{
@@ -1247,23 +1230,17 @@ select{
 
   /* last-section-responsive */
   .last-section{
-    border:2px solid  rgb(34, 34, 34);
     width: 100%;
-    /* height: 720px; */
     margin: 0;
   }
   .fitness{
     margin: 0 auto;
-    height: 600px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    /* margin-top: 20px; */
  }
  .fitness-tittle{
-    margin: 0 ;
-    width: 320px;
-  height: 120px;
-  
+    width: 90%;
+    padding-left: 0; 
  }
 
  .fitness-tittle h1{
@@ -1271,48 +1248,38 @@ select{
  }
  .fitness-tittle p{
     width: 317px;
-    height: 96px;
     font-size: 10px;
-
  }
  .fitness-get{
+    margin-top: 0;
     width: 95%;
-    padding-left: 10px;
-    height:200px;
-   
+    padding-left: 0;  
  }
  .fitness-get p{
     font-size: 14px;
  }
  .fitness-get h1{
-    /* margin-top:20px ; */
     margin-bottom: 40px;
  }
  .fitness-start{
     width: 95%;
-    padding-left: 10px; */
-    height:200px;
-
+    padding-left: 0;
  }
  .fitness-start p{
     font-size: 14px;
  }
  .fitness-start h1{
-    margin-top: 50px;
     margin-bottom: 40px;
  }
  hr{
-    margin-top: 200px;
-    /* max-width: 90%; */
+    width: 90%;
+    margin-top: 10%;
  }
  #end{
     font-size: 14px;
-    /* margin-top: 20px; */
     max-width: 100%;
-    /* margin-left: 110px; */
     text-align: center;
-    /* border: 2px solid red; */
-    margin-bottom: 20px;
+    margin-bottom: 8%;
  }
 }
 
