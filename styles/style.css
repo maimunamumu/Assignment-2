@@ -339,6 +339,64 @@ line-height: 120%;
     display: none;
 }
 
+
+
+/* challange-part */
+.challenge-section{
+    margin:0 auto;
+    border: 2px solid black;
+    background-color: #060a0a;
+    max-width: 1440px;
+    height: 600px;
+}
+.challenge-container{
+    height: 450px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   /* margin-top: 100px; */
+}
+.challenge-card-title{
+    margin-bottom: 58px;
+}
+
+.challenge-card-title h2{
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+}
+.challenge-card-title p{
+  /* border: 2px solid purple; */
+  width: 671px;
+  height: 48px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-left: 250px;
+  margin-top: 14px;
+}
+
+.challenge-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.challenge-card img{
+    width: 90%;
+    border-radius: 12px;
+}
+.challenge-card p{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+margin-top: 10px;
+}
 /* four-section-styles */
     .four-section{
         margin:0 auto;
@@ -857,8 +915,10 @@ height: 129px;
    .btn-primary-two{
     width: 145.91px;
     height: 74.09px;
-    margin-left: -130px;
-    margin-top: 60px;
+    /* margin-left: -130px;
+    margin-top: 60px; */
+    margin-left: -40%;
+    margin-top:12% ;
     font-size: 30.24px;
    }
    .btn-primary-two p{
@@ -906,7 +966,7 @@ text-align: start;
 /* third-section-responsive */
  .third-section{
     width: 100%;
-    height: 100%;
+    height: 640px;
  }
  #img-none-one{
     display: none;
@@ -914,30 +974,32 @@ text-align: start;
  }
  #img-none{
     display: block;
-    width: 287px;
+    width: 100%;
+    height: 250px;
     border-radius: 18px;
  }
  .run-extra{
-    
-    border: 2px solid yellow;
     /* border: none; */
     gap: 2rem;
     margin: 2rem auto;
    /* margin-top: 2rem;
    margin-bottom: 2rem; */
    width: 90%;
-   height: 530px;
+   height: 600px;
     flex-direction: column;
     align-items: center;
  }
  .run-container{
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
-    width:287px ;
+    width:90%;
  }
  .img-container{
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-    width: 287px;
+    width: 90%;
  }
  .run-container h1{
     font-size: 32px;
@@ -950,29 +1012,84 @@ text-align: start;
    height: 54px;
    font-size: 18px;
  }
+
+ /* challenge-section-esponsive */
+ .challenge-section{
+    border: 2px solid black;
+    width: 100%;
+    height: 1130px;
+}
+.challenge-container{
+flex-direction: column;
+height: 1150px;
+}
+.challenge-card{
+grid-template-columns: repeat(1, 1fr);
+justify-content: center;
+gap: 2rem;
+}
+.challenge-card-title{
+/* align-items: start;
+margin-left: 15px;
+margin-right: 15px; */
+/* margin-top: -60px; */
+ /* border: 3px solid yellowgreen; */
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+
+}
+.challenge-card-title h2{
+width: 100%;
+font-size: 32px;
+}
+.challenge-card-title p{
+font-size: 14px;
+margin-left: 10px;
+width: 90%;
+height: 72px;
+margin-top: 1px;
+text-align: center;
+
+}
+.challenge-card img{
+        width: 80%;
+        height: 230px;
+}
+.challenge-card p{
+    font-size: 14px;
+}
+
  /* four-section-responsive */
  .four-section{
     width: 100%;
    height: 800px;
  }
  .bmi-container{
-    width: 353px;
-    height: 630px;
+    margin: 2rem auto;
+    width: 90%;
+    height: 650px;
      flex-direction: column;
      align-items: center;
     flex-direction: column;
-    
+    /* border: 2px solid white;
+     */
  }
  .calculator{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 100px;
-    width: 353px;
+    width: 90%;
     height: 124px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0;
  }
  .calculator p{
+    margin-top: 15px;
+    width: 80%;
     font-size: 14px;
 
  }
@@ -987,7 +1104,8 @@ text-align: start;
    margin-bottom: 0;
  }
  .bmi-table{
-    width: 353px;
+    width: 100%;
+    /* width: 353px; */
 
      flex-direction: column;
      align-items: center;
@@ -1006,23 +1124,24 @@ text-align: start;
  }
  .Bmi-form{
    margin-top: 40px;
-     width: 353px;
+     width: 100%;
      height: 380px;
      flex-direction: column;
      align-items: center;
  }
  input{
-    width: 165px;
+    width: 49%;
+    /* width: 165px; */
      height: 48px;
 }
 select{
-    width: 165px;
+    width: 49%;
     height: 48px;
     margin-top: 12px;
     font-size: 14px;
 }
 .select{
-    width: 330px;
+    width:100%;
     margin-top: 12px;
     
 }
@@ -1046,24 +1165,25 @@ select{
     max-width:100%;
     height: 1500px;
    
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .team-tittle{
     max-width: 90%;
     margin-top: 10rem;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    
   }
   .team-tittle h1{
     font-size: 29px;
   }
   .team-tittle p{
     font-size: 12px;
-    margin-left: 0;
+    margin-left: 10%;
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: 48px;
+    margin-top: 14px;
   }
  
   .team-image{
@@ -1073,7 +1193,7 @@ select{
     grid-template-columns:repeat(1,1fr);
      padding-left: 5%;
     /* padding-top: 20px; */
-    margin-top: 37px;
+    /* margin-top: 37px; */
   }
   .team-image-1 {
     display: none;
